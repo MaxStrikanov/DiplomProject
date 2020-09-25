@@ -1,5 +1,5 @@
 const calc = (price) => {
-    const check = document.querySelectorAll('input[type="checkbox"]')
+    
     const switchOne = document.getElementById('myonoffswitch');
     const switchTwo = document.getElementById('myonoffswitch-two');
     const selectBox = document.querySelectorAll('.select-box');
@@ -8,7 +8,6 @@ const calc = (price) => {
     const calcResult = document.getElementById('calc-result');
     const calcData = JSON.parse(localStorage.getItem('calc')) || [];
   
-    console.log(check);
     let selectBoxArr = [...selectBox].slice(-2);
     
     const countSum = () => {
